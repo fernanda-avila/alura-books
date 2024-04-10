@@ -1,0 +1,368 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+.swiper {
+    cursor: pointer;
+
+}
+.swiper-slide img{
+    width: 100%;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card__descricao {
+display: flex;
+justify-content: space-between;
+margin-bottom: 0.5em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    cursor: pointer;
+
+    
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 10px;
+    margin: 0.7em;
+    padding: 1.2em;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+}
+
+.botoes__item {
+    margin: 0 0.5em;
+}
+
+.botoes__ancora {
+    background-color: var(--laranja);
+    padding: 1em 2.6em;
+    font-size: 15px;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.card__descricao__classificacao {
+    padding: 0.2em 0;
+}
+
+/* section tópicos */
+
+.topicos {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos__titulo {
+    color: var(--branco);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1em;
+
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__link {
+    color: var(--branco);
+    padding: 1em;
+    background-color: var(--laranja);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.topicos__item {
+    margin: 2em 0.4em;
+}
+
+/* section contato */
+
+.contato {
+    background: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo, 
+.contato__texto,
+.contato__email__submit {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    background: url("../imagens/Email.svg") no-repeat;
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    padding-left: 2em;
+}
+
+.contato__email__submit {
+    border: none;
+    font-family: var( --fonte-principal);
+    font-size: 18px;
+    margin: 0.5em 0;
+    margin-left: 75%;
+    
+}
+
+/* section rodapé */
+
+hr {
+    margin:0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+    font-style: var(--fonte-principal);
+    color: var(--azul);
+    font-weight: 300;
+}
+
+.lista-rodape {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+   .carrossel__titulo {
+       font-size: 26px;
+   }
+
+   .swiper-pagination {
+    margin: 2em 0 3em 0;
+   }
+
+   .swiper {
+    width: 75%;
+   }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: block;
+        top:60%;
+    }
+
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+
+    .topicos {
+        padding: 2em 15vw;
+    }
+
+    .topicos__titulo {
+        font-size: 30px;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+    }
+
+    .contato {
+        display: flex;
+        padding: 1em;
+    }
+
+    .contato__texto,
+    .contato__titulo {
+        width: 70%;
+        font-size:24px;
+        align-items: center;
+    }
+
+    .contato__email {
+        margin-left: -100px;
+        width: 30%;
+        font-size: 30px;
+        color: var(--azul);
+        height: 30px;
+        margin-top:0.5em;
+    }
+
+    .contato__email::placeholder {
+        font-size: 20px;
+        background-size: 24px;
+        background-position: 0.5em;
+    }
+
+    .contato__email__submit {
+        margin-left: 0.3em;
+        font-size: 24px;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+    }
+    
+    .lista-rodape__item {
+        display: flex;
+       align-items: center;
+       margin: 0.6em 0;
+
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        color: var(--cinza);
+        margin-left: 0.6em;
+    }
+
+    .lista-rodape__titulo {
+        font-weight: 300;
+        color: var(--cinza-claro);
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+        color: var(--cinza-claro);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+.swiper {
+    width: 50%;
+    margin-left: 4em;
+    
+}
+
+.card {
+    width: 35%;
+    height: 300px;
+    margin-top: -380px;
+    margin-left: 1000px;
+    margin-bottom: 180px;
+}
+
+.descricao__imagem {
+    width: 50%;
+    height: 50%;
+}
+
+.descricao__texto {
+    font-size: 21px;
+    margin:1em 0;
+}
+
+.descricao__titulo {
+    font-size: 35px;
+}
+
+.descricao__titulo-livro {
+    font-size: 32px;
+}
+
+.botoes__ancora {
+    font-size: 17px;
+    margin-top: 0;
+}
+
+.swiper-pagination {
+    margin: 1em 0;
+}
+
+.topicos {
+    padding: 3em 30vw;
+}
+
+.contato {
+    justify-content: center;
+}
+
+.contato__titulo {
+    font-size: 36px;
+    margin-top: 2em;
+}
+
+.contato__email {
+    margin-top: 2.3em;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.lista-rodape {
+    display: block;
+    border-left: 1px solid var(--cinza-claro);
+    padding-left: 1em;
+}
+}
+
+
+
+
+
